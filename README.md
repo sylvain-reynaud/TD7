@@ -25,7 +25,7 @@ Pour vous donner une idée de départ, l’interface pourrait ressembler à cett
 	<img src="ressources/img1.png">
 </p>
 <p align="center">
-	_capture d’écran 1 – affichage classique_
+	capture d’écran 1 – affichage classique
 </p>
 
 ## Fonctionnalités de base
@@ -52,26 +52,26 @@ Chaque action modifiant la base de données occasionnera une mise à jour de l�
 
 
 <p align="center">
-	<img src="ressources/img1.png">
+	<img src="ressources/img2.png">
 </p>
 <p align="center">
-	_capture d’écran 2 – clic sur un adhérent_
-</p>
-
-
-<p align="center">
-	<img src="ressources/img1.png">
-</p>
-<p align="center">
-	_capture d’écran 3 – clic sur un livre disponible_
+	capture d’écran 2 – clic sur un adhérent
 </p>
 
 
 <p align="center">
-	<img src="ressources/img1.png">
+	<img src="ressources/img3.png">
 </p>
 <p align="center">
-	_capture d’écran 4 – clic sur un livre emprunté_
+	capture d’écran 3 – clic sur un livre disponible
+</p>
+
+
+<p align="center">
+	<img src="ressources/img4.png">
+</p>
+<p align="center">
+	capture d’écran 4 – clic sur un livre emprunté
 </p>
 
 

@@ -59,6 +59,7 @@ Chaque action modifiant la base de données occasionnera une mise à jour de l�
 </p>
 
 
+
 <p align="center">
 	<img src="ressources/img3.png">
 </p>
@@ -67,12 +68,14 @@ Chaque action modifiant la base de données occasionnera une mise à jour de l�
 </p>
 
 
+
 <p align="center">
 	<img src="ressources/img4.png">
 </p>
 <p align="center">
 	capture d’écran 4 – clic sur un livre emprunté
 </p>
+
 
 
 ## Conseils et Consignes

@@ -50,31 +50,23 @@ Il est bien entendu que l’utilisateur récupère, à chaque nouvelle utilisati
 
 Chaque action modifiant la base de données occasionnera une mise à jour de l’interface. Ci-dessous des captures d’écran possibles en fonction des actions.
 
-
+### capture d'écran – clic sur un adhérent
 <p align="center">
 	<img src="ressources/img2.png">
 </p>
-<p align="center">
-	capture d’écran 2 – clic sur un adhérent
-</p>
 
 
-
+### capture d'écran – clic sur un livre disponible
 <p align="center">
 	<img src="ressources/img3.png">
 </p>
-<p align="center">
-	capture d’écran 3 – clic sur un livre disponible
-</p>
 
 
-
+### capture d'écran – clic sur un livre emprunté
 <p align="center">
 	<img src="ressources/img4.png">
 </p>
-<p align="center">
-	capture d’écran 4 – clic sur un livre emprunté
-</p>
+
 
 
 

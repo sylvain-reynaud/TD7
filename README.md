@@ -22,5 +22,5 @@ Vous disposez pour ce TD, qui pourrait tenir lieu de projet, d’une liberté to
 Pour vous donner une idée de départ, l’interface pourrait ressembler à cette capture d’écran :
 
 <p align="center">
-	<img src="ressources/img1.png" width="800">
+	<img src="ressources/img1.png">
 </p>

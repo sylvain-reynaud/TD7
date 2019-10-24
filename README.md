@@ -17,7 +17,7 @@ Pour ce travail vous allez devoir programmer le fonctionnement d’une mini-méd
 
 L’idée essentielle est d’avoir une interaction souple avec la base de données par le biais de la technologie AJAX.
 
-Vous disposez pour ce TD, qui pourrait tenir lieu de projet, d’une liberté totale pour l’environnement web (pour le html et le css). 
+Vous disposez pour ce TD, d’une liberté totale pour l’environnement web (pour le html et le css). 
 
 Pour vous donner une idée de départ, l’interface pourrait ressembler à cette capture d’écran :
 
@@ -32,7 +32,7 @@ Pour vous donner une idée de départ, l’interface pourrait ressembler à cett
 	
 Cette application travaillera en lien avec une base de données que vous devrez vous-même structurer. Vous devrez tenir compte des entités `adherent` et `livre`, et de la relation `emprunt` entre un `adherent` et un `livre`.
 
-On supposera que l’accès à cette application est sécurisé, vous n’avez pas à vous poser de problème de connexion, comme cela a pu arriver en prog web serveur au S3. 
+On supposera que l’accès à cette application est sécurisé, vous n’avez pas à gérer de connexion à la médiathèque, comme cela a pu arriver en prog web serveur au S3. 
 
 Vous pouvez développer toutes les fonctionnalités que vous jugez intéressantes. Vous pouvez de même complexifier la base de données au besoin. 
 
@@ -84,9 +84,7 @@ Produisez un code JavaScript propre avec des classes contenant les méthodes ad�
 
 Même si ce n’est pas le thème principal, vous aurez à écrire un peu de PHP. Inspirez vous du TD5 au besoin (`Model.php`, `Conf.php` et `cityRequest.php`).
 
-Cette architecture de fichiers comportera, en plus des fichiers informatiques, un fichier texte membres.txt donnant les membres du groupe, et un autre fichier texte resume.txt, descriptif concis de votre travail et notice claire d’utilisation.
 
-La date de remise du travail sera précisée en cours. A respecter.
 
 	
 

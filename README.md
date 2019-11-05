@@ -28,15 +28,13 @@ L’interface par défaut de la médiathèque ressemble à cette capture d’éc
 	capture d’écran 1 – affichage classique
 </p>
 
-## Fonctionnalités de base
+## Fonctionnalités de base à développer
 	
-Cette application travaillera en lien avec une base de données que vous devrez vous-même structurer. Vous devrez tenir compte des entités `adherent` et `livre`, et de la relation `emprunt` entre un `adherent` et un `livre`.
+Cette application travaillera en lien avec une base de données que vous pourrez importer grâce au fichier `td6.sql`. Les entités `adherent` et `livre` sont matérialisées par des tables, ainsi que la relation `emprunt` entre un `adherent` et un `livre`.
 
-On supposera que l’accès à cette application est sécurisé, vous n’avez pas à gérer de connexion à la médiathèque, comme cela a pu arriver en prog web serveur au S3. 
+Vous allez développer des fonctionnalités qui permettent de gérer les entrées et sorties de la médiathèque. Plus tard vous pourrez complexifier la base de données si vous souhaiter construire une médiathèque plus élaborée. 
 
-Vous pouvez développer toutes les fonctionnalités que vous jugez intéressantes. Vous pouvez de même complexifier la base de données au besoin. 
-
-L’utilisateur pourra au minimum :
+L’utilisateur de la médiathèque pourra au minimum :
 
 + enregistrer un nouvel adhérent ;
 + enregistrer un nouveau livre ;
@@ -68,8 +66,6 @@ Chaque action modifiant la base de données occasionnera une mise à jour de l�
 </p>
 
 
-
-
 ## Conseils et Consignes
 
 Structurez précisément votre architecture de fichiers. Exemple : 
@@ -77,8 +73,6 @@ Structurez précisément votre architecture de fichiers. Exemple :
 <p align="center">
 	<img src="ressources/img5.png">
 </p>
-
-Structurez vos tables de données comme vous savez le faire. Il serait bon d’en donner une trace (fichier `export.sql`) dans le fichier .zip que vous rendrez.
 
 Produisez un code JavaScript propre avec des classes contenant les méthodes adéquates.
 

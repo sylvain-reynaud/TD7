@@ -17,9 +17,9 @@ Pour ce travail vous allez devoir programmer le fonctionnement d’une mini-méd
 
 L’idée essentielle est d’avoir une interaction souple avec la base de données par le biais de la technologie AJAX.
 
-Vous disposez pour ce TD, d’une liberté totale pour l’environnement web (pour le html et le css). 
+Vous disposez pour ce TD, d’une architecture de départ pour l’environnement web, avec les fichiers `mediatheque.html` et `styles.css`. Vous pouvez les modifier. 
 
-Pour vous donner une idée de départ, l’interface pourrait ressembler à cette capture d’écran :
+L’interface par défaut de la médiathèque ressemble à cette capture d’écran :
 
 <p align="center">
 	<img src="ressources/img1.png">

@@ -1,4 +1,4 @@
-# ![](ressources/logo.jpeg) Prog web client riche - JavaScript 
+# ![](ressources/logo.jpeg) Prog web client riche - JavaScript
 
 ### IUT Montpellier-Sète – Département Informatique
 
@@ -13,11 +13,11 @@ la version [pdf](ressources/td6.pdf)
 
 ## INTRODUCTION
 
-Pour ce travail vous allez devoir programmer le fonctionnement d’une mini-médiathèque. Vous aurez à gérer des adhérents, des livres et des emprunts. 
+Pour ce travail vous allez devoir programmer le fonctionnement d’une mini-médiathèque. Vous aurez à gérer des adhérents, des livres et des emprunts.
 
 L’idée essentielle est d’avoir une interaction souple avec la base de données par le biais de la technologie AJAX.
 
-Vous disposez pour ce TD, d’une architecture de départ pour l’environnement web, avec les fichiers `mediatheque.html` et `styles.css`. Vous pouvez les modifier. 
+Vous disposez pour ce TD, d’une architecture de départ pour l’environnement web, avec les fichiers `mediatheque.html` et `styles.css`. Vous pouvez les modifier.
 
 L’interface par défaut de la médiathèque ressemble à cette capture d’écran :
 
@@ -29,10 +29,10 @@ L’interface par défaut de la médiathèque ressemble à cette capture d’éc
 </p>
 
 ## Fonctionnalités de base à développer
-	
+
 Cette application travaillera en lien avec une base de données que vous pourrez importer grâce au fichier `td6.sql`. Les entités `adherent` et `livre` sont matérialisées par des tables, ainsi que la relation `emprunt` entre un `adherent` et un `livre`.
 
-Vous allez développer des fonctionnalités qui permettent de gérer les entrées et sorties de la médiathèque. Plus tard vous pourrez complexifier la base de données si vous souhaiter construire une médiathèque plus élaborée. 
+Vous allez développer des fonctionnalités qui permettent de gérer les entrées et sorties de la médiathèque. Plus tard vous pourrez complexifier la base de données si vous souhaiter construire une médiathèque plus élaborée.
 
 L’utilisateur de la médiathèque pourra au minimum :
 
@@ -42,8 +42,8 @@ L’utilisateur de la médiathèque pourra au minimum :
 + avoir accès, par un clic sur le nom de l’adhérent, à la liste des livres qu’il a en sa possession en ce moment ;
 + avoir accès, par un clic sur le titre du livre disponible à l’emprunt, à une fenêtre qui permet de prêter le livre à un adhérent ;
 + avoir accès, par un clic sur le titre du livre prêté, à une fenêtre proposant la restitution du livre.
-	
-	
+
+
 Il est bien entendu que l’utilisateur récupère, à chaque nouvelle utilisation, l’état précédent de la médiathèque.
 
 Chaque action modifiant la base de données occasionnera une mise à jour de l’interface. Ci-dessous des captures d’écran possibles en fonction des actions.
@@ -68,7 +68,7 @@ Chaque action modifiant la base de données occasionnera une mise à jour de l�
 
 ## Conseils et Consignes
 
-Structurez précisément votre architecture de fichiers. Exemple : 
+Structurez précisément votre architecture de fichiers. Exemple :
 
 <p align="center">
 	<img src="ressources/img5.png">
@@ -76,9 +76,7 @@ Structurez précisément votre architecture de fichiers. Exemple :
 
 Produisez un code JavaScript propre avec des classes contenant les méthodes adéquates.
 
-Même si ce n’est pas le thème principal, vous aurez à écrire un peu de PHP. Inspirez vous du TD5 au besoin (`Model.php`, `Conf.php` et `cityRequest.php`).
+Même si ce n’est pas le thème principal, vous aurez à écrire un peu de PHP. Inspirez vous du TD5 au besoin. Il est probable que vous ayez à :
 
-
-
-	
-
++ enrichir `Model.php` de nouvelles fonctions requêtes ;
++ créer de nouveaux fichiers PHP produisant des `echo json_encode(...)`.

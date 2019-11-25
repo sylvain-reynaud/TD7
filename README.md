@@ -46,7 +46,7 @@ L’utilisateur de la médiathèque pourra au minimum :
 
 Il est bien entendu que l’utilisateur récupère, à chaque nouvelle utilisation, l’état précédent de la médiathèque.
 
-Chaque action modifiant la base de données occasionnera une mise à jour de l’interface. Ci-dessous des captures d’écran possibles en fonction des actions.
+Chaque action modifiant la base de données occasionnera une mise à jour de l’interface. Voici quelques captures d’écran montrant les états possibles de la médiathèque en fonction des actions.
 
 ### capture d'écran – clic sur un adhérent
 <p align="center">

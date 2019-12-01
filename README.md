@@ -2,10 +2,10 @@
 
 ### IUT Montpellier-Sète – Département Informatique
 
-## TD6
+## TD7
 #### _Thème : AJAX, mise en place d'une application médiathèque_
 
-Cliquez sur le lien ci-dessous pour faire, dans un dossier public_html/JS/TD6, votre fork privé du TD6 (**attention, pas de fork à la main !**):
+Cliquez sur le lien ci-dessous pour faire, dans un dossier public_html/JS/TD7, votre fork privé du TD7 (**attention, pas de fork à la main !**):
 
 https://classroom.github.com/a/ow1HkVsz
 

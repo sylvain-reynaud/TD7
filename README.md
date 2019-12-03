@@ -76,7 +76,7 @@ Structurez précisément votre architecture de fichiers. Exemple :
 
 Produisez un code JavaScript propre avec des classes contenant les méthodes adéquates.
 
-Même si ce n’est pas le thème principal, vous aurez à écrire un peu de PHP. Inspirez vous du TD5 au besoin. Il est probable que vous ayez à :
+Même si ce n’est pas le thème principal, vous aurez à écrire un peu de PHP. Inspirez vous des TD précédents au besoin. Il est probable que vous ayez à :
 
 + enrichir `Model.php` de nouvelles fonctions requêtes ;
 + créer de nouveaux fichiers PHP produisant des `echo json_encode(...)`.

@@ -9,7 +9,7 @@ Cliquez sur le lien ci-dessous pour faire, dans un dossier public_html/JS/TD7, v
 
 https://classroom.github.com/a/ow1HkVsz
 
-la version [pdf](ressources/td6.pdf)
+la version [pdf](ressources/td7.pdf)
 
 ## INTRODUCTION
 
@@ -30,7 +30,7 @@ L’interface par défaut de la médiathèque ressemble à cette capture d’éc
 
 ## Fonctionnalités de base à développer
 
-Cette application travaillera en lien avec une base de données que vous pourrez importer grâce au fichier `td6.sql`. Les entités `adherent` et `livre` sont matérialisées par des tables, ainsi que la relation `emprunt` entre un `adherent` et un `livre`.
+Cette application travaillera en lien avec une base de données que vous pourrez importer grâce au fichier `td7.sql`. Les entités `adherent` et `livre` sont matérialisées par des tables, ainsi que la relation `emprunt` entre un `adherent` et un `livre`.
 
 Vous allez développer des fonctionnalités qui permettent de gérer les entrées et sorties de la médiathèque. Plus tard vous pourrez complexifier la base de données si vous souhaiter construire une médiathèque plus élaborée.
 

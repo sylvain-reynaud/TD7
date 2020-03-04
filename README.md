@@ -13,6 +13,10 @@ la version [pdf](ressources/td7.pdf)
 
 ## INTRODUCTION
 
+**Ce TD7 est évalué et fait office de projet JavaScript.**
+
+Vous pouvez travailler seul, ou bien en binôme. Vous devrez alimenter le dépôt github mais vous devrez aussi communiquer une adresse public_html testable pour que votre enseignant puisse évaluer les fonctionnalités programmées.
+
 Pour ce travail vous allez devoir programmer le fonctionnement d’une mini-médiathèque. Vous aurez à gérer des adhérents, des livres et des emprunts.
 
 L’idée essentielle est d’avoir une interaction souple avec la base de données par le biais de la technologie AJAX.

@@ -4,10 +4,11 @@ class Conf {
 
     private static $database = array(
         'hostname' => 'webinfo.iutmontp.univ-montp2.fr',
-        'database' => '...', // à compléter avec vos données personnelles
-        'login'    => '...', // à compléter avec vos données personnelles
-        'password' => '...'  // à compléter avec vos données personnelles
+        'database' => 'derksenm', // à compléter avec vos données personnelles
+        'login'    => 'derksenm', // à compléter avec vos données personnelles
+        'password' => '4em94Cjk'  // à compléter avec vos données personnelles
     );
+
 
     static public function getLogin() {
         return self::$database['login'];

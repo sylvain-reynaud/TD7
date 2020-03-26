@@ -24,6 +24,86 @@ class Model {
         }
     }
 
+
+
+
+    public static function selectAll($table_name){
+        $sql = "SELECT * FROM  $table_name";
+        $req = Model::$pdo->query($sql);
+        $tab = $req->fetchAll();
+
+        return $tab;
+    }
+
+    public static function select($sql) {
+        $req = Model::$pdo->query($sql);
+        $tab = $req->fetchAll();
+        // Attention, si il n'y a pas de résultats, on renvoie false
+        if (empty($tab))
+            return false;
+        return $tab[0];
+    }
+
+
+
+    public static function delete($sql){
+        $req = Model::$pdo->query($sql);
+        $tab = $req->fetchAll();
+        return $tab;
+    }
+
+    public  static function update($data){
+        $table_name = static::$objet;
+        $primary_key = static::$primary;
+
+        $set  = "";
+        foreach ($data as $key=>$value){
+            if ($key != $primary_key){
+                $set = $set . "$key=:$key,";
+            }
+        }
+        $set=rtrim($set ,"\t,");
+        $sql = "UPDATE $table_name SET $set WHERE $primary_key =:$primary_key";
+        $req_prep = Model::$pdo->prepare($sql);
+        $req_prep->execute($data);
+
+    }
+
+    public static function save($sql){
+        $req = Model::$pdo->query($sql);
+        $tab = $req->fetchAll();
+        return $tab;
+
+    }
+
+    public static function selectAvailableBook()
+    {
+        try {
+            $sql = "SELECT DISTINCT idLivre, titreLivre FROM livre WHERE idLivre NOT IN ( SELECT idLivre FROM emprunt ) ";
+            $req_prep = Model::$pdo->query($sql);
+            $tab = $req_prep->fetchAll();
+            return $tab;
+
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+            die("Erreur lors de la recherche dans la base de données.");
+        }
+    }
+
+    public static function selectBorrowedBook()
+    {
+        try {
+            $sql = "SELECT idLivre, titreLivre FROM livre WHERE idLivre IN (SELECT idLivre FROM emprunt)";
+            $req_prep = Model::$pdo->query($sql);
+            $tab = $req_prep->fetchAll();
+            return $tab;
+
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+            die("Erreur lors de la recherche dans la base de données.");
+        }
+    }
+
 }
 
 // on initialise la connexion $pdo

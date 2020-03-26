@@ -5,6 +5,9 @@
 	<title>médiathèque JS</title>
 	<link rel="icon" href="img/book.ico" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="js/main.js" defer></script>
+	<script src="js/Book.js" defer></script>
+	<script src="js/Member.js" defer></script>
 </head>
 <body>
 	<h2>Médiathèque JavaScript</h2>
@@ -28,19 +31,25 @@
 		<div id="adh">
 			<fieldset>
 				<legend>adhérents</legend>
-				<div id="listeAdherents"></div>
+				<div>
+					<ul id="listeAdherents"></ul>
+				</div>
 			</fieldset>
 		</div>
 		<div id="dispos">
 			<fieldset>
 				<legend>livres disponibles</legend>
-				<div id="listeLivresDisponibles"></div>
+				<div>
+					<ul id="listeLivresDisponibles"></ul>
+				</div>
 			</fieldset>
 		</div>
 		<div id="empr">
 			<fieldset>
 				<legend>livres empruntés</legend>
-				<div id="listeLivresEmpruntes"></div>
+				<div>
+					<ul id="listeLivresEmpruntes"></ul>
+				</div>
 			</fieldset>
 		</div>
 	</div>

@@ -1,8 +1,3 @@
-/* todo :
-events
-func anon pour les popups
-*/
-
 let BOOK_LIST = {};
 let MEMBER_LIST = {};
 

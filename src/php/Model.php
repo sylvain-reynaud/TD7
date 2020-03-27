@@ -104,6 +104,36 @@ class Model {
         }
     }
 
+    public static function selectBorrowingById($id)
+    {
+        try {
+            $sql = "SELECT * FROM livre l JOIN emprunt e ON l.idLivre = e.idLivre WHERE e.idAdherent = $id";
+            $req_prep = Model::$pdo->query($sql);
+            $tab = $req_prep->fetchAll();
+            return $tab;
+
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+            die("Erreur lors de la recherche dans la base de données.");
+        }
+    }
+
+    public static function selectBorrower($id)
+    {
+        try {
+            $sql = "SELECT * FROM adherent a join emprunt e on a.idAdherent = e.idadherent WHERE idLivre = $id";
+            $req_prep = Model::$pdo->query($sql);
+            $tab = $req_prep->fetchAll();
+            return $tab;
+
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+            die("Erreur lors de la recherche dans la base de données.");
+        }
+    }
+
+
+
 }
 
 // on initialise la connexion $pdo

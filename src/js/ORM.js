@@ -32,7 +32,13 @@ class ORM {
         this.get(route, this.handle_callback, end_callback, {"nomAdherent": member_name});
     }
 
-    select_all(object_name, end_callback) {
+    create_borrowing(member_id, book_id, end_callback) {
+        let route = "saveBorrowing.php";
+        this.get(route, this.handle_callback, end_callback, {"idLivre": book_id, "idAdherent": member_id});
+    }
+
+    async select_all(object_name, end_callback) {
+        await new Promise(r => setTimeout(r, 200));
         let route = "selectAll.php";
         this.get(route, this.handle_callback, end_callback, {"objet": object_name});
     }
@@ -50,8 +56,14 @@ class ORM {
         }
     }
 
-    delete_borrowing(member_id, book_id) {
+    delete_borrowing(book_id, end_callback) {
+        let route = "deleteBorrowing.php";
+        this.get(route, this.handle_callback, end_callback, {"idLivre": book_id});
+    }
 
+    select_borrower(book_id, end_callback) {
+        let route = "selectBorrower.php";
+        this.get(route, this.handle_callback, end_callback, {"id": book_id});
     }
 
     select_borrowed_book_by_id(member_id, end_callback) {
@@ -59,12 +71,14 @@ class ORM {
         this.get(route, this.handle_callback, end_callback, {"id": member_id});
     }
 
-    select_available_books(end_callback) {
+    async select_available_books(end_callback) {
+        await new Promise(r => setTimeout(r, 200));
         let route = "selectAvailableBook.php";
         this.get(route, this.handle_callback, end_callback);
     }
 
-    select_borrowed_books(end_callback) {
+    async select_borrowed_books(end_callback) {
+        await new Promise(r => setTimeout(r, 200));
         let route = "selectBorrowedBook.php";
         this.get(route, this.handle_callback, end_callback);
     }

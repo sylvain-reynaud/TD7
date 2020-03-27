@@ -26,7 +26,7 @@ class Book {
         let id = this.id;
         orm.select_borrower(this.id, function (data) {
             let member = MEMBER_LIST[data[0].idAdherent];
-            let choice = confirm("Livre prêté à " + member.name);
+            let choice = confirm("Livre prêté à " + member.name + "\nRetour de ce livre ?");
             if (choice) {
                 orm.delete_borrowing(id);
                 orm.select_available_books(updateAvailableBookList);

@@ -132,6 +132,20 @@ class Model {
         }
     }
 
+    public static function selectBook($id)
+    {
+        try {
+            $sql = "SELECT * FROM livre WHERE idLivre = $id";
+            $req_prep = Model::$pdo->query($sql);
+            $tab = $req_prep->fetchAll();
+            return $tab;
+
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+            die("Erreur lors de la recherche dans la base de données.");
+        }
+    }
+
 
 
 }

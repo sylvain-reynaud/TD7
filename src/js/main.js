@@ -3,23 +3,6 @@ let orm = new ORM("php/");
 let BOOK_LIST = {};
 let MEMBER_LIST = {};
 
-function updateBookList(data) {
-    BOOK_LIST = {}
-    for (let e of data) {
-        BOOK_LIST[e.idLivre] = e.titreLivre;
-    }
-}
-
-function getRequest(stringVille, callback) {
-    let url = "php/requeteVille.php?ville=" + stringVille;
-    let requete = new XMLHttpRequest();
-    requete.open("GET", url, true);
-    requete.addEventListener("load", function () {
-        callback(requete);
-    });
-    requete.send(null);
-}
-
 function addMember(name) {
     orm.create_member(name, function (data) {
         orm.select_all("adherent", updateMemberList);
@@ -97,13 +80,11 @@ listeAdherents.addEventListener("click", function (e) {
 
 });
 
-
 listeLivresDisponibles.addEventListener("click", function (e) {
     let book = BOOK_LIST[e.target.id.replace("book", "")];
     book.borrow();
 });
 
-//todo
 listeLivresEmpruntes.addEventListener("click", function (e) {
     let book = BOOK_LIST[e.target.id.replace("book", "")];
     book.return();

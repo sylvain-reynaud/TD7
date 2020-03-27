@@ -14,8 +14,7 @@ class Book {
     borrow(msg="") {
         let member_id = prompt(msg + "Prêt de \"" + this.name + "\".\nn° de l'emprunteur ?");
         if (member_id === null) return;
-        // member_id = parseInt(member_id);
-        if (!MEMBER_LIST[member_id]) {
+        else if (!MEMBER_LIST[member_id]) {
             return this.borrow("n° incorrect\n")
         }
         orm.create_borrowing(member_id, this.id);

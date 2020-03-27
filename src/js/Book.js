@@ -1,7 +1,7 @@
 class Book {
-    constructor(name) {
+    constructor(id, name) {
         this.name = name;
-        this.id = Object.keys(BOOK_LIST).length;
+        this.id = id;
         this.member = null;
     }
 
